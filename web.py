@@ -169,9 +169,9 @@ def CheckUpdate(filename: str, githuburl: str) -> bool:
         return None
 
 if "-beta" in sys.argv:
-    githuburl = "https://raw.githubusercontent.com/ilovekids2/GummyFN-v2/beta/"
+    githuburl = "https://raw.githubusercontent.com/ilovekids2/TriceraBots-v2/beta/"
 else:
-    githuburl = "https://raw.githubusercontent.com/ilovekids2/GummyFN-v2/master/"
+    githuburl = "https://raw.githubusercontent.com/ilovekids2/TriceraBots-v2/master/"
 
 if CheckUpdate("updater.py", githuburl):
     print("updater.py got updated. Run updater again...\n")
