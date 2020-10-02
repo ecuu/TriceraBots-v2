@@ -1,4 +1,4 @@
-### Hi there, I'm ilovekids2 - aka [ilovekids2][website] 👋
+### Hi there, I'm ilovekids2 [ilovekids2][website] 👋
 
 [![Twitter Follow](https://twitter.com/gummyleaks?s=09)]
 
