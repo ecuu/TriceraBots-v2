@@ -58,9 +58,9 @@ except ModuleNotFoundError as e:
     os.execl(python, python, *sys.argv)
 
 
-print(crayons.cyan(f'\nGummyFN made by Gummy Bear and Kiko. '
+print(crayons.cyan(f'\TriceraBots-v2 made by Gummy Bear and ecu. '
                    'Massive credit to Terbau for creating the library.'))
-print(crayons.cyan(f'Discord server: https://discord.gg/ugUTsaz - For support, questions, etc.'))
+print(crayons.cyan(f'Discord server: https://discord.gg/YnYfmFM - For support, questions, etc.'))
 
 sanic_app = sanic.Sanic(__name__)
 server = None
@@ -115,7 +115,7 @@ async def get_authorization_code():
 
 class GummyFN(commands.Bot):
     def __init__(self, email : str, password : str, **kwargs) -> None:
-        self.status = '🔥 https://discord.gg/ugUTsaz 🔥'
+        self.status = '🔥 https://discord.gg/YnYfmFM 🔥'
         self.kairos = 'cid_028_ff2b06cf446376144ba408d3482f5c982bf2584cf0f508ee3e4ba4a0fd461a38'
         device_auth_details = get_device_auth_details().get(email, {})
         super().__init__(
@@ -151,7 +151,7 @@ class GummyFN(commands.Bot):
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Notice: Join https://discord.gg/ugUTsaz for a free lobby bot.And UseCode zfn in the item shop"
+        self.welcome_message = "Notice: Join https://discord.gg/YnYfmFM for a free lobby bot.And UseCode zfn in the item shop"
         self.whisper_message = "If you need help or want your own bot, join https://discord.gg/ugUTsaz"
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
