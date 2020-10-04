@@ -140,19 +140,19 @@ class GummyFN(commands.Bot):
         self.loop = asyncio.get_event_loop()
         self.session = aiohttp.ClientSession()
 
-        self.default_skin = "CID_028_Athena_Commando_F"
+        self.default_skin = "CID_029_Athena_Commando_F_Halloween"
         self.default_backpack = "BID_023_Pinkbear"
         self.default_pickaxe = "Pickaxe_Lockjaw"
         self.banner = "otherbanner28"
         self.banner_colour = "defaultcolor15"
         self.default_level = 1
         self.default_bp_tier = 999999999
-        self.default_emote = "EID_JustHome"
+        self.default_emote = "EID_LazyShuffle"
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Notice: Join https://discord.gg/YnYfmFM for a free lobby bot.And UseCode zfn in the item shop"
-        self.whisper_message = "If you need help or want your own bot, join https://discord.gg/ugUTsaz"
+        self.welcome_message = "Notice: Join https://discord.gg/YnYfmFM for a free lobby bot."
+        self.whisper_message = "Discord: https://discord.gg/YnYfmFM"
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
         prop = {schema_key: self.party.me.meta.set_prop(schema_key, new_value)}
