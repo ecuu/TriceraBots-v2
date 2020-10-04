@@ -58,7 +58,7 @@ except ModuleNotFoundError as e:
     os.execl(python, python, *sys.argv)
 
 
-print(crayons.cyan(f'\TriceraBots-v2 made by Gummy Bear and ecu. '
+print(crayons.cyan(f'\Tricerabots version 1.0, made by ecu and gummy ;) '
                    'Massive credit to Terbau for creating the library.'))
 print(crayons.cyan(f'Discord server: https://discord.gg/YnYfmFM - For support, questions, etc.'))
 
@@ -115,7 +115,7 @@ async def get_authorization_code():
 
 class GummyFN(commands.Bot):
     def __init__(self, email : str, password : str, **kwargs) -> None:
-        self.status = '🔥 https://discord.gg/YnYfmFM 🔥'
+        self.status = 'Lol hi'
         self.kairos = 'cid_028_ff2b06cf446376144ba408d3482f5c982bf2584cf0f508ee3e4ba4a0fd461a38'
         device_auth_details = get_device_auth_details().get(email, {})
         super().__init__(
@@ -140,19 +140,19 @@ class GummyFN(commands.Bot):
         self.loop = asyncio.get_event_loop()
         self.session = aiohttp.ClientSession()
 
-        self.default_skin = "CID_028_Athena_Commando_F"
+        self.default_skin = "CID_029_Athena_Commando_F_Halloween"
         self.default_backpack = "BID_023_Pinkbear"
         self.default_pickaxe = "Pickaxe_Lockjaw"
         self.banner = "otherbanner28"
         self.banner_colour = "defaultcolor15"
-        self.default_level = 999
+        self.default_level = 1
         self.default_bp_tier = 999999999
-        self.default_emote = "EID_JustHome"
+        self.default_emote = "EID_LazyShuffle"
 
         self.sanic_app = sanic_app
         self.server = server
-        self.welcome_message = "Notice: Join https://discord.gg/YnYfmFM for a free lobby bot.And UseCode zfn in the item shop"
-        self.whisper_message = "If you need help or want your own bot, join https://discord.gg/ugUTsaz"
+        self.welcome_message = "Notice: Join https://discord.gg/YnYfmFM for a free lobby bot."
+        self.whisper_message = "Discord: https://discord.gg/YnYfmFM"
 
     async def set_and_update_member_prop(self, schema_key: str, new_value: Any) -> None:
         prop = {schema_key: self.party.me.meta.set_prop(schema_key, new_value)}
@@ -233,7 +233,7 @@ class GummyFN(commands.Bot):
             await self.party.me.set_emote(asset=self.default_emote)
 
             if self.user.display_name != member.display_name:  # Welcomes the member who just joined.
-                print(f"{member.display_name} has joined the lobby.")
+                print(f"{member.display_name} has joined.")
 
     async def event_friend_message(self, message: fortnitepy.FriendMessage) -> None:
         print(f'{message.author.display_name}: {message.content}')
@@ -1980,7 +1980,7 @@ else:
 
 async def ping_repl(url: str) -> None:
   try:
-      async with aiohttp.ClientSession() as session:
+      async with aiohttp.ClientSession() as session
           async with session.request(
                 method='GET',
                 url=url
