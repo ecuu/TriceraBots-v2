@@ -1,4 +1,5 @@
 
+
 try:
     
     import asyncio
@@ -883,11 +884,6 @@ async def purple(ctx):
     
 # customize command
 
-@client.command()
-async def ninja(ctx):
-    await client.party.me.set_skin(asset="CID_226_Athena_Commando_F_Octoberfest")
-    
-    await client.party.me.set_emote(asset="eid_tourbus")
     
 @client.command()
 async def fruit(ctx):
