@@ -317,7 +317,7 @@ async def event_party_member_confirm(confirmation: fortnitepy.PartyJoinConfirmat
 async def event_party_member_join(member: fortnitepy.PartyMember) -> None:
     
     await client.party.send(
-        f" Welcome ! {member.display_name} Made with GummyFN joinh ttps://discord.gg/6wCwxjd to get your own bot!"
+        f" Welcome ! {member.display_name} Made with TriceraBotFN joinh ttps://discord.gg/6wCwxjd to get your own bot!"
     )
 try:
     import asyncio
@@ -633,7 +633,7 @@ async def event_party_member_confirm(confirmation: fortnitepy.PartyJoinConfirmat
 async def event_party_member_join(member: fortnitepy.PartyMember) -> None:
     
     await client.party.send(
-        f" Welcome ! {member.display_name} Made with GummyFN join https://discord.gg/6wCwxjd to get your own bot!"
+        f" Welcome ! {member.display_name} Made with TriceraBotFN join https://discord.gg/6wCwxjd to get your own bot!"
     )
     await client.party.me.set_emote(asset="eid_wave")
     await asyncio.sleep(1.25)
