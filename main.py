@@ -38,12 +38,8 @@ os.system("cls||clear")
 
 intro = (
     Fore.LIGHTCYAN_EX
-    + """ ██████╗ ███████╗████████╗████████╗███████╗██████╗ ███████╗███╗   ██╗
-██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗██╔════╝████╗  ██║
-██████╔╝█████╗     ██║      ██║   █████╗  ██████╔╝█████╗  ██╔██╗ ██║
-██╔══██╗██╔══╝     ██║      ██║   ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║
-██████╔╝███████╗   ██║      ██║   ███████╗██║  ██║██║     ██║ ╚████║
-╚═════╝ ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═══╝
+    + """ 
+    lobby bot made by gummy bear and ecu
                                                                     
  """
 )
@@ -320,7 +316,7 @@ async def event_party_member_confirm(confirmation: fortnitepy.PartyJoinConfirmat
 async def event_party_member_join(member: fortnitepy.PartyMember) -> None:
     
     await client.party.send(
-        f" Welcome ! {member.display_name} Made with GummyFN join maybe to get your own bot!"
+        f" Welcome ! {member.display_name} Made with GummyFN joinh ttps://discord.gg/6wCwxjd to get your own bot!"
     )
 try:
     import asyncio
@@ -358,12 +354,8 @@ os.system("cls||clear")
 
 intro = (
     Fore.LIGHTCYAN_EX
-    + """ ██████╗ ███████╗████████╗████████╗███████╗██████╗ ███████╗███╗   ██╗
-██╔══██╗██╔════╝╚══██╔══╝╚══██╔══╝██╔════╝██╔══██╗██╔════╝████╗  ██║
-██████╔╝█████╗     ██║      ██║   █████╗  ██████╔╝█████╗  ██╔██╗ ██║
-██╔══██╗██╔══╝     ██║      ██║   ██╔══╝  ██╔══██╗██╔══╝  ██║╚██╗██║
-██████╔╝███████╗   ██║      ██║   ███████╗██║  ██║██║     ██║ ╚████║
-╚═════╝ ╚══════╝   ╚═╝      ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝  ╚═══╝
+    + """ 
+    lobby bot made by gummy bear and ecu
                                                                     
  """
 )
@@ -446,7 +438,7 @@ with open("config.json") as f:
             Fore.RED
             + " [ERROR] "
             + Fore.RESET
-            + "There was an error in one of the bot's files! (config.json). If you have problems trying to fix it, join the discord support server for help - https://discord.gg/6wCwxjd"
+            + "There was an error in one of the bot's files! (config.json). If you have problems trying to fix it, join the discord support server for help - https://discord.gg/6wCwxjdd"
         )
         print(Fore.LIGHTRED_EX + f"\n {e}")
         exit(1)
@@ -611,7 +603,7 @@ banned = []
 
 @client.event
 async def event_party_message(message: fortnitepy.PartyMessage):
-    if message.content == "Youtube: LupusLeaks to get your own **free** lobbybot." and client.party.me.leader:
+    if message.content == "" and client.party.me.leader:
         await message.author.kick()
         banned.append(message.author.id)
 @client.event
@@ -640,7 +632,7 @@ async def event_party_member_confirm(confirmation: fortnitepy.PartyJoinConfirmat
 async def event_party_member_join(member: fortnitepy.PartyMember) -> None:
     
     await client.party.send(
-        f" Welcome ! {member.display_name} Made with GummyFN join maybe to get your own bot!"
+        f" Welcome ! {member.display_name} Made with GummyFN join https://discord.gg/6wCwxjd to get your own bot!"
     )
     await client.party.me.set_emote(asset="eid_wave")
     await asyncio.sleep(1.25)
