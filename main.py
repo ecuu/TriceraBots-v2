@@ -40,7 +40,7 @@ os.system("cls||clear")
 intro = (
     Fore.LIGHTCYAN_EX
     + """ 
-    lobby bot made by gummy bear and ecu
+    Tricerabots by Gummy Bear and Ecu
                                                                     
  """
 )
